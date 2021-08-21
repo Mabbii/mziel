@@ -1,0 +1,442 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.mySlides {display: none;}
+img {vertical-align: middle;
+}
+.brand{
+    float: left;
+    padding-left: 150px;
+}
+  #navbar {
+    min-height: 10vh;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  #navbar a {
+    display: inline-block;
+    color:#2d2c72;
+    text-align: center;
+    
+    margin-top: 25px;
+    padding: 12px 35px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+.header{
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+.header3{
+    min-height: 80vh;
+    width: 100%;
+    background-image: url(Images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header4{
+    min-height: 30vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.text-box{
+    width: 90%;
+    color:black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    color: white;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    #navbar a{
+        padding: 14px 20px;
+    }
+    .brand{
+        padding-left: 50px;
+    }
+}
+
+/*-----dishes------*/
+
+.dishes{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    color:#2d2c72;
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.dishes-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    color: #2d2c72;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.dishes-col:hover{
+    box-shadow: 0 0 20px 0px ;
+}
+@media(max-width:700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+/*-Video-*/
+.video{
+    margin: 0 auto;
+    width: 80%;
+}
+.videowrapper {
+    position: relative;
+    padding-bottom: 20%;
+    padding-top: 20px;
+    height: 0px;
+}
+.videowrapper iframe{
+    position: absolute;
+    padding-bottom: 10%;
+    left: 10%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 200%;
+    width: 80%;
+}
+.chef{
+    width: 80%;
+    margin: auto;
+    margin-top: 400px;
+    text-align: center;
+}
+.chef-col{
+    flex-basis: 40%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.chef-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.chef-col p{
+    padding: 0%;
+}
+.chef-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+@media (max-width: 700px) {
+    .chef{
+        margin-top: 150px;
+    }
+    .header4 h3{
+        margin-top: 50px;
+    }
+    .chef h1{
+        font-size: 20px;
+    }
+    .footer p {
+        font-size: 15px;
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer p{
+    font-size: 20px;
+}
+/* Dishes*/
+.dish{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.dish-col{
+    flex-basis: 45%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.dish img{
+    width: 100%;
+    border-radius: 10px;
+}
+.dish h1{
+    margin-top: 30px;
+}
+
+.dish-coll{
+    flex-basis: auto;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.dish-colll{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.map{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.map h1{
+    margin-top: 30px;
+}
+.map iframe{
+    width: 100%;
+    min-height: 60vh;
+}
+.header4 h3{
+    color: black;
+    text-align: center;
+}
+.header4 h1{
+    color: black;
+    text-align: center;
+    font-size: 60px;
+}
+
+
+.fab{
+    width: 100px;
+    font-size: 30px;
+}
+
+.note{
+    width: 40%;
+    margin: auto;
+    border-radius: 5px;
+    
+    padding: 20px;
+}
+.note h1{
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  .col-25 {
+    width: 20%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+
+  /*---------------------------------------------------- About Page ----------------------------------------------------*/
+  .aboutbanner{
+    margin: auto;
+    height: 500px;
+    width: 100%;
+    background-image: url("../Images/aboutbanner.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  .aboutbannercontent h1{
+      padding-top: 100px;
+      margin-left: 100px;
+      color: wheat;
+  }
+  .aboutbannercontent p{
+    font-size: 20px;
+    margin-left: 90px;
+    color: wheat;
+  }
+  @media (max-width: 600px) {
+    .aboutbannercontent h1{
+        padding-top: 150px;
+        margin-left: 50px;
+    }
+    .aboutbannercontent p{
+        margin-left: 40px;
+    } 
+  }
+  .aboutrow{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutdishes-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+h3{
+    color: #2d2c72;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.aboutdishes-col:hover{
+    box-shadow: 0 0 20px 0px ;
+}
+@media(max-width:700px) {
+    .aboutrow{
+        flex-direction: column;
+    }
+}
+.dish-col h3{
+
+    text-align: left;
+}
+.dishes img{
+    width: 100%;
+    border-radius: 10px;
+}
